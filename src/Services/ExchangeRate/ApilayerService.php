@@ -21,7 +21,7 @@ class ApilayerService implements ExchangeRateInterface
     public function getRateByCurrency(string $currency): float
     {
         try {
-            $response = $this->client->request('GET', $this->apiUrl, [
+            $response = $this->client->get($this->apiUrl, [
                 'headers' => ['apikey' => $this->accessKey]
             ]);
         } catch (GuzzleException $e) {

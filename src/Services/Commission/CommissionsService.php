@@ -28,8 +28,6 @@ class CommissionsService
         $rate = $this->exchangeRateService->getRateByCurrency($currency);
         $amountWithRate = $this->getAmountWithRate($amount, $rate, $currency);
 
-        var_dump(round($amountWithRate * $this->getCommissionByCountry($countyCode), 2));
-
         return round($amountWithRate * $this->getCommissionByCountry($countyCode), 2);
     }
 
