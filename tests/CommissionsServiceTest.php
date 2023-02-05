@@ -3,7 +3,6 @@
 use App\Services\Commission\CommissionsService;
 use App\Services\CountryLocation\BinlistLocationService;
 use App\Services\ExchangeRate\ApilayerService;
-use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Response;
 use PHPUnit\Framework\TestCase;
 use Tests\Traits\MockClientTrait;
